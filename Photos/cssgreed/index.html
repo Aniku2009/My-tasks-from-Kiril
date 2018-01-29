@@ -75,7 +75,7 @@ button {
   padding: 5px 10px;
 }
 
-button:hover:before {
+/*button:hover:before {
     position: absolute; /* Подменю позиционируются абсолютно */
 
 
@@ -89,7 +89,7 @@ button:hover:before {
 font-size: 12px;
 font-weight: 400;
 text-align: center;
-}
+}*/
 
 .text_under_photo_name{
 font-family: OpenSans;
@@ -109,6 +109,26 @@ line-height: 22px;/* Приближение из-за подстановки шрифтов */
 text-align: left;
 }
 
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+	content: attr(title);
+}
+	/*https://www.webdesignerdepot.com/2012/11/how-to-create-a-simple-css3-tooltip/*/
 	</style>
   </head>
   
@@ -160,10 +180,10 @@ text-align: left;
   ''>
 <h2>Photos</h2>
    <div class="right-column-left">
-   <button title="5555"><img src="img/Upload file.png" alt="Upload Icon"></button>
-   <button><img src="img/Newfolder.png" alt="Upload Icon"></button>
-   <button><img src="img/Share folder.png" alt="Upload Icon"></button>
-   <button><img src="img/Delete.png" alt="Upload Icon"></button>
+   <button title="Upload" class="tooltip"><img src="img/Upload file.png" alt="Upload Icon"></button>
+   <button title="New Folder" class="tooltip"><img src="img/Newfolder.png" alt="Upload Icon"></button>
+   <button title="Share Folder" class="tooltip"><img src="img/Share folder.png" alt="Upload Icon"></button>
+   <button title="Delete" class="tooltip"><img src="img/Delete.png" alt="Upload Icon"></button>
   </div>
   
     <div class="right-column-right">
