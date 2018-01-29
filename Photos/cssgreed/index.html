@@ -29,6 +29,7 @@ height: 5%;
 
 .right-column-right {
   float: left;
+    text-align:right;
   width: 50%;
   hight:5%;
 }
@@ -74,16 +75,20 @@ button {
   padding: 5px 10px;
 }
 
-button:hover {
+button:hover:before {
+    position: absolute; /* Подменю позиционируются абсолютно */
+
+
+    margin-top: 2em; /* Сдвигаем подменю вверх */
   border: 1px solid #0099cc;
   background-color:white;
-  content:'Upload';
-  color: #ffffff;
+  content:"Upload";
+  color: black;
   padding: 5px 10px;
   font-family: OpenSans;
 font-size: 12px;
 font-weight: 400;
-line-height: 58px;
+
 text-align: center;
   
 }
@@ -94,7 +99,7 @@ text-align: center;
   <body>
   <div class="column-left">
   <div>
-  <img src="img/drop-icon.png" width="44px" height="40px align="right" >
+  <img src="img/drop-icon.png" width="44px" height="40px" align="center" >
   </div>
   <ul class="gallery">
     <li>
@@ -134,7 +139,8 @@ text-align: center;
  
   <div class="column-right">
  
-  <img src="img/top.png" alt="top icon">
+  <img src="img/top.png" alt="top icon" width="100%"
+  ''>
 <h2>Photos</h2>
    <div class="right-column-left">
    <button><img src="img/Upload file.png" alt="Upload Icon"></button>
@@ -164,6 +170,8 @@ text-align: center;
 		</div>
     	<div class="block">
 			<img src="img/daisy.jpg" alt="daisy" />
+			<h3>daisy.jpg</h3>
+			<h3>1.4 MB</h3>
 		</div>
     	<div class="block">
 			<img src="img/dropsomedroplets.jpg" alt="dropsomedroplets" />
