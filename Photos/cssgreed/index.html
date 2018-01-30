@@ -75,21 +75,7 @@ button {
   padding: 5px 10px;
 }
 
-/*button:hover:before {
-    position: absolute; /* Подменю позиционируются абсолютно */
 
-
-    margin-top: 2em; /* Сдвигаем подменю вверх */
-  border: 1px solid #0099cc;
-  background-color:white;
-  content:"Upload";
-  color: black;
-  padding: 5px 10px;
-  font-family: OpenSans;
-font-size: 12px;
-font-weight: 400;
-text-align: center;
-}*/
 
 .text_under_photo_name{
 font-family: OpenSans;
@@ -114,27 +100,44 @@ text-align: left;
     position: relative;
 }
 
-.tooltip:hover:after{
-    background: #333;
-    background: rgba(0,0,0,.8);
+.tooltip:hover:bottom{
+    background: white;
+   border: 1px solid #0099cc;
     border-radius: 5px;
-    bottom: 26px;
-    color: #fff;
+   
+    color:black;
     content: attr(title);
-    left: 20%;
-    padding: 5px 15px;
+    bottom: 2px;
+    padding: 5px 10px;
     position: absolute;
-    z-index: 98;
-    width: 220px;
-	content: attr(title);
+    z-index: 1;
+	  font-family: OpenSans;
+font-size: 12px;
+font-weight: 400;
+text-align: center;
 }
 	/*https://www.webdesignerdepot.com/2012/11/how-to-create-a-simple-css3-tooltip/*/
+	/*button:hover:before {
+    position: absolute; /* Подменю позиционируются абсолютно */
+
+
+    margin-top: 2em; /* Сдвигаем подменю вверх */
+  border: 1px solid #0099cc;
+  background-color:white;
+  content:"Upload";
+  color: black;
+  padding: 5px 10px;
+  font-family: OpenSans;
+font-size: 12px;
+font-weight: 400;
+text-align: center;
+}*/
 	</style>
   </head>
   
   <body>
   <div class="column-left">
-  <div>
+  <div align="center" margin="5px">
   <img src="img/drop-icon.png" width="44px" height="40px" align="center" >
   </div>
    <div class="footer"></div>
