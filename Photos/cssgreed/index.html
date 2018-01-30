@@ -68,6 +68,7 @@ background-image: url("img/get started.png");
     font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
+	
 }
 button {
   border: none;
@@ -104,8 +105,8 @@ text-align: left;
     background: white;
    border: 1px solid #0099cc;
     border-radius: 5px;
-   
-    color:black;
+   border-style: solid;
+    color:#6e7a9a;
     content: attr(title);
     bottom: 2px;
     padding: 5px 10px;
@@ -115,6 +116,27 @@ text-align: left;
 font-size: 12px;
 font-weight: 400;
 text-align: center;
+}
+
+.rightButtons:focus{
+outline:0;
+border-radius: 5px;
+border-style: solid;
+border-width: 0px;
+border-color:  #444c63;
+background-color:  #444c63;
+width: 70px;
+height: 18px;
+color:white;
+display: inline-block;
+ border: non;
+ 
+}
+
+.rightButtons{
+  border: black;
+  background-color:white;
+  padding: 5px 10px;
 }
 	/*https://www.webdesignerdepot.com/2012/11/how-to-create-a-simple-css3-tooltip/*/
 	/*button:hover:before {
@@ -190,9 +212,9 @@ text-align: center;
   </div>
   
     <div class="right-column-right">
-  <button>Name</button>
-  <button>Size</button>
-  <button>Modified</button>
+  <button class="rightButtons">Name</button>
+  <button class="rightButtons">Size</button>
+  <button class="rightButtons">Modified</button>
   </div>
   
   
