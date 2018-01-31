@@ -5,14 +5,19 @@
 	<style>
 .block{
 	float:left;
-	width:20%;
+	width: 164px;
+	height: 175px;
 	margin: 10px;  
+	z-index: 1;
 }
+
 .column-left {
-  float: left;
-background-color:  #444c63;
-width: 202px;
-height: 817px;
+	float: left;
+	background-color:  #444c63;
+	width: 202px;
+	height: 817px;
+	
+	
 }
 
 .column-right {
@@ -22,43 +27,49 @@ height: 817px;
 }
 
 .right-column-left {
-  float: left;
-width: 50%;
-height: 5%;
+	float: left;
+	width: 50%;
+	height: 5%;
 }
 
 .right-column-right {
-  float: left;
-    text-align:right;
-  width: 50%;
-  hight:5%;
+	float: left;
+	text-align:right;
+	width: 50%;
+	hight:5%;
 }
 .footer {
-  clear: both;
+	clear: both;
 }
  .gallery li {
-      float: left;
-      width: 130px;
-      list-style: none;
-      text-align: left;      
+    float: left;
+    width: 130px;
+    list-style: none;
+    text-align: left; 
+	padding: 0px;
+     
 }
 
 .list-text{
-font-family: OpenSans;
-color:  #8692b2;
-font-size: 14px;/* Приближение из-за подстановки шрифтов */
-font-weight: 400;
-line-height: 45px;/* Приближение из-за подстановки шрифтов */
-text-align: left;
-display: inline-block;
+	font-family: OpenSans;
+	color:  #8692b2;
+	font-size: 14px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 45px;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	display: inline-block;
 }
 
+
+
 .li-background{
-background-image: url("img/get started.png");
+	background-image: url("img/get started.png");
+	width: 7px;
+	height: 25px;
 }
 
 .button{
- background-color: #444c63;;
+	background-color: #444c63;;
     border-color: #2E9AFE;
     color: white;
     padding: 15px 32px;
@@ -67,33 +78,59 @@ background-image: url("img/get started.png");
     display: inline-block;
     font-size: 12px;
     margin: 4px 2px;
-    cursor: pointer;
-	
+    cursor: pointer;	
 }
+
+.buttonUpgrade{
+	background-color: #444c63;;
+    border-color: #2E9AFE;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;   
+    cursor: pointer;	
+	padding:0;
+	margin:50px 2px 10px 18px;
+}
+
+.dataUsage{
+	background-color: #444c63;;
+    border-color: #2E9AFE;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;   
+    cursor: pointer;	
+	padding:0;
+	margin:250px 2px 10px 18px;
+}
+
 button {
-  border: none;
-  background-color:white;
-  padding: 5px 10px;
+	border: none;
+	background-color:white;
+	padding: 5px 10px;
 }
 
 
 
 .text_under_photo_name{
-font-family: OpenSans;
-color:  #444c63;
-font-size: 13px;/* Приближение из-за подстановки шрифтов */
-font-weight: 400;
-line-height: 22px;/* Приближение из-за подстановки шрифтов */
-text-align: left;
+	font-family: OpenSans;
+	color:  #444c63;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
 }
 
 .text_under_photo_size{
-font-family: OpenSans;
-color:  #9aa1b6;
-font-size: 13px;/* Приближение из-за подстановки шрифтов */
-font-weight: 400;
-line-height: 22px;/* Приближение из-за подстановки шрифтов */
-text-align: left;
+	font-family: OpenSans;
+	color:  #9aa1b6;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
 }
 
 .tooltip{
@@ -103,34 +140,33 @@ text-align: left;
 
 .tooltip:hover:bottom{
     background: white;
-   border: 1px solid #0099cc;
-    border-radius: 5px;
-   border-style: solid;
+    border: 1px solid #0099cc;
+    border-radius: 10px!important;
+	border-style: solid;
     color:#6e7a9a;
     content: attr(title);
     bottom: 2px;
     padding: 5px 10px;
     position: absolute;
     z-index: 1;
-	  font-family: OpenSans;
-font-size: 12px;
-font-weight: 400;
-text-align: center;
+	font-family: OpenSans;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
 }
 
 .rightButtons:focus{
-outline:0;
-border-radius: 5px;
-border-style: solid;
-border-width: 0px;
-border-color:  #444c63;
-background-color:  #444c63;
-width: 70px;
-height: 18px;
-color:white;
-display: inline-block;
- border: non;
- 
+	outline:0;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 0px;
+	border-color:  #444c63;
+	background-color:  #444c63;
+	width: 70px;
+	height: 25px;
+	color:white;
+	display: inline-block;
+	border: none;
 }
 
 .rightButtons{
@@ -138,166 +174,200 @@ display: inline-block;
   background-color:white;
   padding: 5px 10px;
 }
-	/*https://www.webdesignerdepot.com/2012/11/how-to-create-a-simple-css3-tooltip/*/
-	/*button:hover:before {
-    position: absolute; /* Подменю позиционируются абсолютно */
 
+.imageClick:focus img{
+	outline:0;
+	-webkit-filter: brightness(30%); 
+	filter: brightness(30%);
+}
 
-    margin-top: 2em; /* Сдвигаем подменю вверх */
-  border: 1px solid #0099cc;
-  background-color:white;
-  content:"Upload";
-  color: black;
-  padding: 5px 10px;
-  font-family: OpenSans;
-font-size: 12px;
-font-weight: 400;
-text-align: center;
-}*/
+.span1{
+    visibility: hidden;
+    position: absolute;
+	padding: 5px 130px;
+}
+
+.span2{
+    visibility: visible;
+    position: absolute;
+	padding: 5px 8px;
+	
+	
+}
+
+.list-text-get{
+	font-family: OpenSans;
+	color:  #8692b2;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 45px;
+	text-align: left;	
+padding: 0px;
+display: inline-block;
+position: absolute;
+top: 298px;
+left: 70px;
+
+}
+
+.imageWithScreen{
+z-index:8;
+}
 	</style>
   </head>
   
   <body>
   <div class="column-left">
-  <div align="center" margin="5px">
-  <img src="img/drop-icon.png" width="44px" height="40px" align="center" >
-  </div>
-   <div class="footer"></div>
-  <ul class="gallery">
-    <li>
-      <img src="img/file.png" width="10%" height="10%">
-      <div class="list-text">Files</div>
-    </li>
+  <br/>
+	  <div align="center">
+			<img src="img/drop-icon.png" width="44px" height="40px" align="center" >
+	  </div>
+	   <div class="footer"></div>
+	  <ul class="gallery">
+		<li>
+		  <img src="img/file.png" width="10%" height="10%"/>
+		  <div class="list-text">Files</div>
+		</li>
 
-    <li>
-      <img src="img/photos.png" width="10%" height="10%">
-      <div class="list-text">Photos</div>
-    </li>
+		<li>
+		  <img src="img/photos.png" width="10%" height="10%"/>
+		  <div class="list-text">Photos</div>
+		</li>
 
-    <li>
-      <img src="img/sharing.png" width="10%" height="10%">
-      <div class="list-text">Sharing</div>
-    </li>
+		<li>
+		  <img src="img/sharing.png" width="10%" height="10%"/>
+		  <div class="list-text">Sharing</div>
+		</li>
 
-    <li>
-      <img src="img/links.png" width="10%" height="10%">
-      <div class="list-text">Links</div>
-    </li>
+		<li>
+		  <img src="img/links.png" width="10%" height="10%"/>
+		  <div class="list-text">Links</div>
+		</li>
 
-    <li>
-      <img src="img/events.png" width="10%" height="10%">
-      <div class="list-text">Events</div>
-    </li>
+		<li>
+		  <img src="img/events.png" width="10%" height="10%"/>
+		  <div class="list-text">Events</div>
+		</li>
 
-    <li class="li-background">
-      <!--img src="img/get started.png" width="10%" height="10%" -->
-      <div class="list-text">Get Started</div>
-    </li>
-  </ul>
-
-  <button class="button">Upgrade account</button>
+		<li >
+			<div class="imageWithScreen">
+						<span class="span2">
+							<img src="img/shape 14.svg"/>
+						</span>
+					<img src="img/get started.svg" width="160 px" height="26 px"  />
+					<div class="list-text-get">Get Started</div>
+			</div>
+		 
+		  
+		</li>
+	  </ul>
+	  
+	  <div class="dataUsage">
+			<img src="img/1.svg"/>
+	  </div>
+	  
+	  <button class="buttonUpgrade" ><img src="img/Upgrade Account.svg"></button>
   
   </div>
  
   <div class="column-right">
  
-  <img src="img/top.png" alt="top icon" width="100%"
-  ''>
-<h2>Photos</h2>
-   <div class="right-column-left">
-   <button title="Upload" class="tooltip"><img src="img/Upload file.png" alt="Upload Icon"></button>
-   <button title="New Folder" class="tooltip"><img src="img/Newfolder.png" alt="Upload Icon"></button>
-   <button title="Share Folder" class="tooltip"><img src="img/Share folder.png" alt="Upload Icon"></button>
-   <button title="Delete" class="tooltip"><img src="img/Delete.png" alt="Upload Icon"></button>
-  </div>
-  
-    <div class="right-column-right">
-  <button class="rightButtons">Name</button>
-  <button class="rightButtons">Size</button>
-  <button class="rightButtons">Modified</button>
-  </div>
-  
-  
-  
-  <div class="footer"></div>
-  <hr align="center">
-   		<div class="block">
-			<img src="img/girl.jpg" alt="girl" />
-			<div class="text_under_photo_name"> girl.jpg 
+	  <img src="img/top.png" alt="top icon" width="100%"/>
+		<h2>Photos</h2>
+	   <div class="right-column-left">
+		   <button title="Upload" class="tooltip"><img src="img/Upload file.png" alt="Upload Icon"></button>
+		   <button title="New Folder" class="tooltip"><img src="img/Newfolder.png" alt="Upload Icon"></button>
+		   <button title="Share Folder" class="tooltip"><img src="img/Share folder.png" alt="Upload Icon"></button>
+		   <button title="Delete" class="tooltip"><img src="img/Delete.png" alt="Upload Icon"></button>
+	  </div>
+	  
+		<div class="right-column-right">
+		  <button class="rightButtons">Name</button>
+		  <button class="rightButtons">Size</button>
+		  <button class="rightButtons">Modified</button>
+	  </div>
+	  
+	  
+	  
+	  <div class="footer"></div>
+	  <hr align="center">
+			<div class="block">
+				<div class="imageClick" tabindex="0">
+						<span class="span1">
+							<img src="img/mark.svg" alt="girl" />
+						</span>
+					<img src="img/girl.jpg" alt="girl" />
+				</div>
+				<div class="text_under_photo_name"> girl.jpg</div>
+				<div class="text_under_photo_size"> 1.2 MB</div>
 			</div>
-			<div class="text_under_photo_size"> 1.2 MB 
+			<div class="block">
+			<div class="imageClick" tabindex="0">
+						<span class="span1">
+							<img src="img/mark.svg" alt="girl" />
+						</span>
+				<div class="imageClick" tabindex="0">
+				</div>
+					<img src="img/bluedandelion.jpg" alt="bluedandelion" />
+				</div>
+				<div class="text_under_photo_name"> bluedendelion.jpg</div>
+				<div class="text_under_photo_size"> 1.4 MB </div>
 			</div>
-		</div>
-		<div class="block">
-			<img src="img/bluedandelion.jpg" alt="bluedandelion" />
-			<div class="text_under_photo_name"> bluedendelion.jpg 
+			<div class="block">
+			<div class="imageClick" tabindex="0">
+						<span class="span1">
+							<img src="img/mark.svg" alt="girl" />
+						</span>
+				<img src="img/boysSitting.jpg" alt="boysSitting" />
+				</div>
+				<div class="text_under_photo_name"> BoysSitting.jpg </div>
+				<div class="text_under_photo_size"> 1.5 MB</div>
 			</div>
-			<div class="text_under_photo_size"> 1.4 MB 
+			<div class="block">
+			<div class="imageClick" tabindex="0">
+						<span class="span1">
+							<img src="img/mark.svg" alt="girl" />
+						</span>
+				<img src="img/daisy.jpg" alt="daisy" />
+				</div>
+				<div class="text_under_photo_name"> daisy.jpg </div>
+				<div class="text_under_photo_size"> 1 MB</div>
 			</div>
-		</div>
-		<div class="block">
-			<img src="img/boysSitting.jpg" alt="boysSitting" />
-			<div class="text_under_photo_name"> BoysSitting.jpg 
+			<div class="block">
+				<img src="img/dropsomedroplets.jpg" alt="dropsomedroplets" />
+				<div class="text_under_photo_name"> dropsomedroplets.jpg </div>
+				<div class="text_under_photo_size"> 1.9 MB </div>
 			</div>
-			<div class="text_under_photo_size"> 1.5 MB 
+			<div class="block">
+				<img src="img/glen.jpg" alt="glen" />
+				<div class="text_under_photo_name"> glen.jpg</div>
+				<div class="text_under_photo_size"> 1 MB </div>
 			</div>
-		</div>
-    	<div class="block">
-			<img src="img/daisy.jpg" alt="daisy" />
-			<div class="text_under_photo_name"> daisy.jpg 
+			<div class="block">
+				<img src="img/goldFish.jpg" alt="goldFish" />
+				<div class="text_under_photo_name"> gold fish.jpg </div>
+				<div class="text_under_photo_size"> 1 MB </div>
 			</div>
-			<div class="text_under_photo_size"> 1 MB 
+			<div class="block">
+				<img src="img/gymnast.jpg" alt="gymnast" />
+				<div class="text_under_photo_name"> gimnast.jpg </div>
+				<div class="text_under_photo_size"> 1.5 MB </div>
 			</div>
-		</div>
-    	<div class="block">
-			<img src="img/dropsomedroplets.jpg" alt="dropsomedroplets" />
-			<div class="text_under_photo_name"> dropsomedroplets.jpg 
+			<div class="block">
+				<img src="img/motorcycle.jpg" alt="motorcycle" />
+				<div class="text_under_photo_name"> motorcycle.jpg</div>
+				<div class="text_under_photo_size"> 1.8 MB </div>
 			</div>
-			<div class="text_under_photo_size"> 1.9 MB 
+			<div class="block">
+				<img src="img/nikon.jpg" alt="nikon" />
+				<div class="text_under_photo_name"> nikon.jpg </div>
+				<div class="text_under_photo_size"> 11 MB </div>
 			</div>
-		</div>
-    	<div class="block">
-			<img src="img/glen.jpg" alt="glen" />
-			<div class="text_under_photo_name"> glen.jpg 
+			<div class="block">
+				<img src="img/poppyformom.jpg" alt="poppyformom" />
+				<div class="text_under_photo_name"> popyformom.jpg </div>
+				<div class="text_under_photo_size"> 2 MB </div>
 			</div>
-			<div class="text_under_photo_size"> 1 MB 
-			</div>
-		</div>
-    	<div class="block">
-			<img src="img/goldFish.jpg" alt="goldFish" />
-			<div class="text_under_photo_name"> gold fish.jpg 
-			</div>
-			<div class="text_under_photo_size"> 1 MB 
-			</div>
-		</div>
-    	<div class="block">
-			<img src="img/gymnast.jpg" alt="gymnast" />
-			<div class="text_under_photo_name"> gimnast.jpg 
-			</div>
-			<div class="text_under_photo_size"> 1.5 MB 
-			</div>
-		</div>
-    	<div class="block">
-			<img src="img/motorcycle.jpg" alt="motorcycle" />
-			<div class="text_under_photo_name"> motorcycle.jpg 
-			</div>
-			<div class="text_under_photo_size"> 1.8 MB 
-			</div>
-		</div>
-    	<div class="block">
-			<img src="img/nikon.jpg" alt="nikon" />
-			<div class="text_under_photo_name"> nikon.jpg 
-			</div>
-			<div class="text_under_photo_size"> 11 MB 
-			</div>
-		</div>
-		<div class="block">
-			<img src="img/poppyformom.jpg" alt="poppyformom" />
-			<div class="text_under_photo_name"> popyformom.jpg 
-			</div>
-			<div class="text_under_photo_size"> 2 MB 
-			</div>
-		</div>
     </div>
 
 	<div class="footer"></div>

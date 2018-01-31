@@ -1,0 +1,47 @@
+<svg width="150" height="35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style type="text/css">
+  <![CDATA[
+.style0 {
+  font-size: 13px;
+  font-family: "OpenSans-Bold";
+  fill: rgb(255,255,255);
+}
+]]>
+ </style>
+ <clipPath id="clip0">
+  <rect id="svg_1" height="3" width="149" y="32" x="0"/>
+ </clipPath>
+ <clipPath id="clip1">
+  <circle id="svg_2" r="9" cy="9" cx="9"/>
+ </clipPath>
+ <defs>
+  <symbol id="symbol0">
+   <circle id="svg_3" r="9" cy="9" cx="141"/>
+  </symbol>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse ry="5.662643" rx="6.987942" id="svg_16" cy="8.945793" cx="141.385452" stroke-width="1.5" stroke="#A4A4A4" fill="none"/>
+  <g id="svg_4">
+   <rect id="svg_5" fill="rgb(54,61,83)" height="3" width="149" y="32" x="0"/>
+   <g id="svg_6">
+    <rect id="svg_7" fill="rgb(54,61,83)" height="3" width="149" y="32" x="0"/>
+    <rect id="svg_8" clip-path="url(#clip0)" fill="rgb(0,181,249)" height="3" width="149" y="32" x="-75"/>
+   </g>
+   <text id="svg_9" x="0" y="15" class="style0">
+    <tspan id="svg_10" fill="rgb(255,255,255)" x="0.00 6.67 13.34 16.09 24.49 31.54 34.29 38.75 41.51 48.18 54.85 61.51 64.27 72.67">50 GB / 100 GB</tspan>
+   </text>
+   <g id="svg_11">
+    <g id="svg_12">
+     <use id="svg_13" fill="rgb(67,75,99)" height="18" width="18" y="0" x="132" xlink:href="#symbol0"/>
+     <use id="svg_14" clip-path="url(#clip1)" stroke-width="2px" stroke="rgb(111,121,149)" fill="none" height="18" width="18" y="0" x="132" xlink:href="#symbol0"/>
+    </g>
+    <path id="svg_15" fill="rgb(0,181,249)" d="m145.42,8.81c0,0 -3.61,0 -3.61,0c0,0 0,3.61 0,3.61c0,0 -0.62,0 -0.62,0c0,0 0,-3.61 0,-3.61c0,0 -3.61,0 -3.61,0c0,0 0,-0.62 0,-0.62c0,0 3.61,0 3.61,0c0,0 0,-3.61 0,-3.61c0,0 0.62,0 0.62,0c0,0 0,3.61 0,3.61c0,0 3.61,0 3.61,0c0,0 0,0.62 0,0.62z"/>
+   </g>
+  </g>
+ </g>
+</svg>
