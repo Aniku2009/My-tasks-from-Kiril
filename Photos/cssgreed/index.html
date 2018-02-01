@@ -91,7 +91,29 @@
     font-size: 12px;   
     cursor: pointer;	
 	padding:0;
-	margin:50px 2px 10px 18px;
+	margin:30px 2px 10px 18px;
+}
+
+.buttonUpgrade:link{
+}
+
+.buttonUpgrade:visited{
+}
+
+.buttonUpgrade:hover{
+}
+
+.buttonUpgrade:active{
+background-color: #444c63;;
+    border-color: #2E9AFE;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;   
+    cursor: pointer;	
+	padding:0;
+	margin:30px 2px 10px 18px;
 }
 
 .dataUsage{
@@ -104,7 +126,7 @@
     font-size: 12px;   
     cursor: pointer;	
 	padding:0;
-	margin:250px 2px 10px 18px;
+	margin:350px 2px 10px 18px;
 }
 
 button {
@@ -134,14 +156,13 @@ button {
 }
 
 .tooltip{
-    display: inline;
     position: relative;
 }
 
-.tooltip:hover:bottom{
+.tooltip:hover:after{
     background: white;
     border: 1px solid #0099cc;
-    border-radius: 10px!important;
+    border-radius: 5px!important;
 	border-style: solid;
     color:#6e7a9a;
     content: attr(title);
@@ -153,6 +174,9 @@ button {
 	font-size: 12px;
 	font-weight: 400;
 	text-align: center;
+	top: 10px;
+	left: 10px;
+	
 }
 
 .rightButtons:focus{
@@ -170,21 +194,24 @@ button {
 }
 
 .rightButtons{
-  border: black;
-  background-color:white;
-  padding: 5px 10px;
+	border: black;
+	background-color:white;
+	padding: 5px 10px;
 }
 
 .imageClick:focus img{
 	outline:0;
 	-webkit-filter: brightness(30%); 
 	filter: brightness(30%);
+	
 }
 
 .span1{
     visibility: hidden;
     position: absolute;
 	padding: 5px 130px;
+	z-index: 555;
+	
 }
 
 .span2{
@@ -202,17 +229,17 @@ button {
 	font-weight: 400;
 	line-height: 45px;
 	text-align: left;	
-padding: 0px;
-display: inline-block;
-position: absolute;
-top: 298px;
-left: 70px;
-
+	padding: 0px;
+	display: inline-block;
+	position: absolute;
+	top: 298px;
+	left: 70px;
 }
 
 .imageWithScreen{
-z-index:8;
+	z-index:8;
 }
+
 	</style>
   </head>
   
@@ -276,8 +303,8 @@ z-index:8;
 		<h2>Photos</h2>
 	   <div class="right-column-left">
 		   <button title="Upload" class="tooltip"><img src="img/Upload file.png" alt="Upload Icon"></button>
-		   <button title="New Folder" class="tooltip"><img src="img/Newfolder.png" alt="Upload Icon"></button>
-		   <button title="Share Folder" class="tooltip"><img src="img/Share folder.png" alt="Upload Icon"></button>
+		   <button title="New" class="tooltip"><img src="img/Newfolder.png" alt="Upload Icon"></button>
+		   <button title="Share" class="tooltip"><img src="img/Share folder.png" alt="Upload Icon"></button>
 		   <button title="Delete" class="tooltip"><img src="img/Delete.png" alt="Upload Icon"></button>
 	  </div>
 	  
@@ -370,6 +397,5 @@ z-index:8;
 			</div>
     </div>
 
-	<div class="footer"></div>
   </body>
 </html>
